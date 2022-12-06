@@ -1,4 +1,7 @@
-build/
-dist/
-NovelConverter.exe
+*/build/
+*/dist/
+*.exe
 *.txt
+구버전/
+*.spec
+*/__pycache__/
