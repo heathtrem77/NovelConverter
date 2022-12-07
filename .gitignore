@@ -5,3 +5,4 @@
 구버전/
 *.spec
 */__pycache__/
+backup*

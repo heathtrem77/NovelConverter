@@ -7,7 +7,7 @@ UI_NAME = 'NovelConverter_layout'
 
 uiCompileCommand = f'pyuic5 -x {UI_NAME}.ui -o {UI_NAME}.py'
 # rscCompileCommand = f'pyrcc5 {SOURCE_PATH}rsc.qrc -o {SOURCE_PATH}rsc_rc.py'
-exeGenerateCommand = f'pyinstaller -w -F --hidden-import PyQt5 --name="{FILE_NAME}" {SOURCE_NAME}.py'
+exeGenerateCommand = f'pyinstaller -w -F --hidden-import=PyQt5, --hidden-import=docx --name="{FILE_NAME}" {SOURCE_NAME}.py'
 
 def Build():
     os.system(uiCompileCommand)
