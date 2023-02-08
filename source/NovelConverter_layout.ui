@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>991</width>
+    <width>1478</width>
     <height>746</height>
    </rect>
   </property>
@@ -50,18 +50,34 @@
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
-     <widget class="QTextEdit" name="inputPlace"/>
+     <widget class="QTextEdit" name="inputPlace">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
     </item>
     <item>
-     <widget class="QTextEdit" name="outputPlace"/>
+     <widget class="QTextEdit" name="outputPlace">
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>714</y>
+     <x>1337</x>
+     <y>712</y>
      <width>131</width>
      <height>30</height>
     </rect>
@@ -94,6 +110,36 @@
    </property>
    <property name="text">
     <string>File export</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="kakuyomuPlace">
+   <property name="geometry">
+    <rect>
+     <x>986</x>
+     <y>30</y>
+     <width>481</width>
+     <height>679</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>987</x>
+     <y>8</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Kakuyomu</string>
    </property>
   </widget>
  </widget>

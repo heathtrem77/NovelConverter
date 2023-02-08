@@ -1,4 +1,5 @@
 import sys
+import re
 
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
@@ -47,6 +48,11 @@ class NCWindow(QDialog, Ui_NovelConverter):
         
         self.outputPlace.clear()
         self.outputPlace.setPlainText(new)
+
+        new += '\n\n―――――\n\n' + '読んでくださってありがとうございます！\n' + '面白かった！　とか、これからも楽しみ！　とお考えでしたら！\n' + '一個だけでもいいから、☆とフォローをくだされば嬉しいです！　力になります！'
+
+        self.kakuyomuPlace.clear()
+        self.kakuyomuPlace.setPlainText(new)
 
     def convertUploadFormatToOriginalText(self):
         oldText = self.inputPlace.toPlainText().splitlines()
